@@ -18,6 +18,8 @@
     "@angular/platform-browser": "~12.1.0-",
     "@angular/platform-browser-dynamic": "~12.1.0-",
     "@angular/router": "~12.1.0-",
+    "@syncfusion/ej2-angular-pivotview": "^19.2.51",
+    "@syncfusion/ej2-angular-treegrid": "^19.2.51",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",
     "zone.js": "~0.11.4"
