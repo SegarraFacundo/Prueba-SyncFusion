@@ -1,0 +1,9 @@
+::ng-deep {
+  body {
+    margin: 0 !important;
+  }
+}
+
+.content {
+  height: calc(100vh - 60px);
+}

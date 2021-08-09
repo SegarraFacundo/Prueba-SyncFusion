@@ -3,14 +3,16 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: '',
-    children: [
-      {
-        path: 'tabla',
-        loadChildren: () =>
-          import('./modules/tablas/tablas.module').then((m) => m.TablasModule),
-      },
-    ],
+    path: 'app',
+    loadChildren: () =>
+      import('./modules/modules-web.module').then((m) => m.ModulesWebModule),
+  },
+  {
+    path: 'hibrido',
+    loadChildren: () =>
+      import('./modules/modules-hibrido.module').then(
+        (m) => m.ModulesHibridoModule
+      ),
   },
   {
     path: '**',

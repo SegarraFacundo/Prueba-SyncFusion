@@ -1,0 +1,15 @@
+<ejs-sidebar id="default-sidebar" #sidebar [type]="type" style="visibility: hidden" [width]="width"
+  [showBackdrop]="showBackdrop" [closeOnDocumentClick]="closeOnDocumentClick" [target]="target">
+  <div class="title"> Sidebar content</div>
+  <div class="sub-title">
+    Click the button to close the Sidebar.
+  </div>
+  <div class="main-menu">
+    <div>
+      <!-- Treevie element declaration -->
+      <ejs-treeview id="main-treeview" #treeview [fields]='field' expandOn='Click'></ejs-treeview>
+
+    </div>
+    <button ej-button id="close" (click)="closeSideBar()" class="e-btn close-btn">Close Sidebar</button>
+  </div>
+</ejs-sidebar>

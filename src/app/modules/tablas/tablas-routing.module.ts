@@ -6,16 +6,16 @@ import { TreeGridComponent } from './tree-grid/tree-grid.component';
 const routes: Routes = [
   {
     path: 'pivot-view',
-    component: PivotViewComponent
+    component: PivotViewComponent,
   },
   {
     path: 'tree-grid',
-    component: TreeGridComponent
-  }
+    component: TreeGridComponent,
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class TablaRoutingModule { }
+export class TablaRoutingModule {}
