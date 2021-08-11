@@ -1,3 +1,7 @@
 export const environment = {
-  production: true
+  production: true,
+  config: {
+    urlBase: '',
+    urlBasePhy2service: '/phy2service',
+  }
 };
