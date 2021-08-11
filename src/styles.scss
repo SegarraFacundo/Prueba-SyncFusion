@@ -12,3 +12,7 @@
 @import '../node_modules/@syncfusion/ej2-treegrid/styles/bootstrap.css';
 @import '../node_modules/@syncfusion/ej2-angular-pivotview/styles/bootstrap.css';
 @import '../node_modules/@syncfusion/ej2-angular-navigations/styles/bootstrap.css';
+
+body {
+  min-height: 100%;
+}

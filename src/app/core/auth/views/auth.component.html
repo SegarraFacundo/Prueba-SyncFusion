@@ -1,0 +1,18 @@
+<img class="bg" [src]="imageBackground" alt="">
+<div class="row phy-contenedor-auth">
+
+  <app-logo-auth></app-logo-auth>
+
+  <div class="col-12" *ngIf="titulo$ != null">
+    <div class="container container-xl phy-contenedor">
+
+      <div class="row mb-3">
+        <div class="col-12">
+          <h1 class="phy-titulo">{{ titulo$ | async | uppercase }}</h1>
+        </div>
+      </div>
+
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

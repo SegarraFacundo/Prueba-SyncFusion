@@ -1,22 +1,23 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { Error404Component } from './core/errors/views/error404/error404.component';
 
 const routes: Routes = [
   {
     path: 'app',
     loadChildren: () =>
-      import('./modules/modules-web.module').then((m) => m.ModulesWebModule),
+      import('./aplicaciones/app/modules-app.module').then((m) => m.ModulesAppModule),
   },
   {
     path: 'hibrido',
     loadChildren: () =>
-      import('./modules/modules-hibrido.module').then(
+      import('./aplicaciones/hibrido/modules-hibrido.module').then(
         (m) => m.ModulesHibridoModule
       ),
   },
   {
     path: '**',
-    redirectTo: '',
+    component: Error404Component,
   },
 ];
 

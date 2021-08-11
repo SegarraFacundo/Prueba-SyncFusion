@@ -5,7 +5,7 @@ const routes: Routes = [
   {
     path: 'tabla',
     loadChildren: () =>
-      import('./tablas/tablas.module').then((m) => m.TablasModule),
+      import('@modules/tablas/tablas.module').then((m) => m.TablasModule),
   }
 ];
 

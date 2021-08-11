@@ -1,0 +1,87 @@
+<div class="container container-xl">
+
+  <div class="row">
+
+    <div class="col-auto">
+
+      <div class="wrapper">
+
+        <div class="block-center wd-xl">
+
+          <H1 class="mb-4" *ngIf="authService.catalogo">{{authService.catalogo.cliente}}</H1>
+
+          <!-- LOGIN card-->
+          <div class="card card-flat">
+            <!--<div class="card-header text-center bg-primary">
+                <a>
+                  <img
+                    class="block-center rounded"
+                    src="assets/img/logo.png"
+                    alt="Image"
+                  />
+                </a>
+              </div>-->
+            <div class="card-body">
+              <!--<h4 class="text-center">INICIAR SESIÓN</h4>-->
+              <br />
+              <form [formGroup]="form" class="form-validate mb-3" role="form" name="loginForm" novalidate=""
+                (submit)="submitForm()">
+                <div class="form-group">
+                  <div class="input-group with-focus">
+                    <input class="form-control border-right-0" id="username" type="text" name="username"
+                      placeholder="Ingrese usuario" formControlName="username" required="" />
+                    <div class="input-group-append">
+                      <span class="input-group-text bg-transparent">
+                        <em class="fa fa-user"></em>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="text-danger" *ngIf="
+                      form.controls['username'].hasError('required') &&
+                        (form.controls['username'].dirty ||
+                        form.controls['username'].touched)
+                      ">
+                    Este dato es requerido
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="input-group with-focus">
+                    <!--HIDE PASSWORD DESDE
+                  -------------------------------------------
+                  NECESITA INSTALADO
+                  npm install ngx-show-hide-password --save
+                  npm install @fortawesome/angular-fontawesome @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons --save
+                  ------------------------------------------->
+
+
+                      <input class="form-control border-right-0" id="password" type="password" name="password"
+                        placeholder="Ingrese contraseña" formControlName="password" required="" />
+                    <div class="text-danger" *ngIf="
+                          form.controls['password'].hasError('required') &&
+                          (form.controls['password'].dirty ||
+                          form.controls['password'].touched)
+                        ">
+                      Este dato es requerido
+                    </div>
+                  </div>
+
+                  <!-- HIDE PASSWORD HASTA
+                      -->
+                  <button class="btn btn-block btn-primary mt-3" type="submit">
+                    I N G R E S A R
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

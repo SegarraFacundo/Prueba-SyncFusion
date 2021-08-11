@@ -1,0 +1,15 @@
+{
+  "/api/*": {
+    "target": "https://dev.physis.com.ar",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  },
+  "/phy2service/*": {
+    "target": "https://dev.physis.com.ar",
+    "segure": true,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  }
+
+}

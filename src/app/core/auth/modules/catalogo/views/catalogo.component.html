@@ -1,0 +1,21 @@
+<div class="row" *ngIf="estaCargando">
+  <div class="col-12">
+    <app-loading-data></app-loading-data>
+  </div>
+</div>
+
+<div class="row" *ngIf="!estaCargando">
+
+  <div class="col-lg-6" *ngFor="let catalogo of catalogos">
+
+    <!-- START card-->
+    <div class="card phy-catalogo" (click)="setCatalogo(catalogo)">
+      <div class="card-body">
+        <h3 class="card-title mb-0 phy-catalogo-titulo">{{ catalogo.cliente }}</h3>
+        <p class="card-text mb-0">{{ catalogo.catalog }}</p>
+      </div>
+    </div>
+    <!-- END card-->
+
+  </div>
+</div>

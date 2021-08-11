@@ -19,7 +19,18 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@assets/*": ["src/assets/*"],
+      "@core/*": ["src/app/core/*"],
+      "@auth/*": ["src/app/core/auth/*"],
+      "@errors/*": ["src/app/core/errors/*"],
+      "@shared/*": ["src/app/shared/*"],
+      "@web/*": ["src/app/aplicaciones/web/*"],
+      "@hibrido/*": ["src/app/aplicaciones/hibrido/*"],
+      "@tercero/*": ["src/app/aplicaciones/tercero/*"],
+      "@modules/*": ["src/app/modules/*"]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

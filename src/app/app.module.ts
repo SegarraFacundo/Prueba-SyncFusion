@@ -9,10 +9,15 @@ import {
   SortService,
   FilterService,
 } from '@syncfusion/ej2-angular-treegrid';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    CoreModule,
+    AppRoutingModule,
+  ],
   providers: [PageService, SortService, FilterService],
   bootstrap: [AppComponent],
 })
